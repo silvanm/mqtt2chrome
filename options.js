@@ -21,11 +21,11 @@ function $(id) {
 // Reset options to sane default values.
 function resetOptions()
 {
-  localStorage.broker = "test.mosquitto.org";       // broker websocket address
-  localStorage.port = 80;                           // broker websocket port
-  localStorage.username = "";                       // broker username, leave blank for none
-  localStorage.password = "";                       // broker password, leave blank for none  
-  localStorage.subtopic = "/mqtt2chrome/messages";  // topic to subscribe to
+  localStorage.broker = "hoenggerberg.muehlemann-popp.ch";       // broker websocket address
+  localStorage.port = 8083;                           // broker websocket port
+  localStorage.username = "chrome";                       // broker username, leave blank for none
+  localStorage.password = "";                       // broker password, leave blank for none
+  localStorage.subtopic = "presence_status";  // topic to subscribe to
   localStorage.reconnectTimeout = 10;               // Clear notifications after this many seconds
   localStorage.clearNotifications = true;           // Enable automatic clearing of notifications
   localStorage.notificationTimeout = 10;            // Clear notifications after this many seconds

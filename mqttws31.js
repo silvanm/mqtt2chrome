@@ -1727,6 +1727,10 @@ Messaging = (function (global) {
         this.stopTrace = function () {
             client.stopTrace();
         };
+
+		this.isConnected = function() {
+			return client.connected;
+		}
     };
 
     Client.prototype = {
